@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+message ControlFunctionMessage {
+  uint32 cycle_count = 1;
+  uint32 cycle_start_us = 2;
+
+  uint32 engine_count = 3;
+  uint32 gear_count = 4;
+
+  float engine_rpm = 5;
+  float secondary_rpm = 6;
+  float filtered_engine_rpm = 7;
+  float filtered_secondary_rpm = 8;
+
+  float target_rpm = 9;
+  float engine_rpm_error = 10;
+
+  float velocity_command = 11;
+  float velocity_estimate = 12;
+
+  uint32 last_heartbeat_ms = 13;
+  uint32 active_errors = 14;
+  uint32 disarm_reason = 15;
+
+  float bus_voltage = 16;
+  float bus_current = 17;
+  float iq_measured = 18;
+  float iq_setpoint = 19;
+
+  bool inbound_limit_switch = 20;
+  bool outbound_limit_switch = 21;
+  int32 shadow_count = 22;
+  float actuator_position = 23;
+}
