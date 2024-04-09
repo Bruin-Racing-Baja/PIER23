@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message ControlFunctionMessage {
+message ControlFunctionState {
   uint32 cycle_count = 1;
   uint32 cycle_start_us = 2;
 
@@ -29,6 +29,6 @@ message ControlFunctionMessage {
 
   bool inbound_limit_switch = 20;
   bool outbound_limit_switch = 21;
-  int32 shadow_count = 22;
+  int32 encoder_count = 22;
   float actuator_position = 23;
 }

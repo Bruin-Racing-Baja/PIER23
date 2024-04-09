@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message HeaderMessage {
+message OperationHeader {
   uint32 timestamp = 1;
   uint32 clock_us = 2;
 }
