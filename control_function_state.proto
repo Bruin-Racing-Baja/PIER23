@@ -29,6 +29,7 @@ message ControlFunctionState {
 
   bool inbound_limit_switch = 20;
   bool outbound_limit_switch = 21;
-  int32 encoder_count = 22;
-  float actuator_position = 23;
+  bool engage_limit_switch = 22;
+  int32 encoder_count = 23;
+  float actuator_position_inch = 24;
 }
