@@ -17,19 +17,19 @@ message ControlFunctionState {
 
   float velocity_command = 11;
   float velocity_estimate = 12;
+  float position_estimate = 13;
 
-  uint32 last_heartbeat_ms = 13;
-  uint32 active_errors = 14;
-  uint32 disarm_reason = 15;
+  uint32 last_heartbeat_ms = 14;
+  uint32 active_errors = 15;
+  uint32 disarm_reason = 16;
+  uint8 procedure_result = 17;
 
-  float bus_voltage = 16;
-  float bus_current = 17;
-  float iq_measured = 18;
-  float iq_setpoint = 19;
+  float bus_voltage = 18;
+  float bus_current = 19;
+  float iq_measured = 20;
+  float iq_setpoint = 21;
 
-  bool inbound_limit_switch = 20;
-  bool outbound_limit_switch = 21;
-  bool engage_limit_switch = 22;
-  int32 encoder_count = 23;
-  float actuator_position_inch = 24;
+  bool inbound_limit_switch = 22;
+  bool outbound_limit_switch = 23;
+  bool engage_limit_switch = 24;
 }
