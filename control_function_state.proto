@@ -22,7 +22,7 @@ message ControlFunctionState {
   uint32 last_heartbeat_ms = 14;
   uint32 active_errors = 15;
   uint32 disarm_reason = 16;
-  uint8 procedure_result = 17;
+  uint32 procedure_result = 17;
 
   float bus_voltage = 18;
   float bus_current = 19;
@@ -32,4 +32,7 @@ message ControlFunctionState {
   bool inbound_limit_switch = 22;
   bool outbound_limit_switch = 23;
   bool engage_limit_switch = 24;
+
+  bool velocity_mode = 25;
+  float position_command = 26;
 }
