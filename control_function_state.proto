@@ -35,4 +35,5 @@ message ControlFunctionState {
 
   bool velocity_mode = 25;
   float position_command = 26;
+  float engine_rpm_derror = 27;
 }
