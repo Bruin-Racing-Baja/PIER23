@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message TestBenchState {
+  float engine_rpm = 1;
+  float secondary_rpm = 2;
+
+  uint32 engine_count = 3;
+  uint32 gear_count = 4;
+}
