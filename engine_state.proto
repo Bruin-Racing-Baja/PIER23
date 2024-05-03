@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message EngineState {
+  uint32 pulse_count = 1;
+  uint32 pulse_time_diff_us = 2;
+  uint32 filt_pulse_time_diff_us = 3;
+  float rpm = 4;
+  float filt_rpm = 5;
+}

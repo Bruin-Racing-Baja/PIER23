@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "nanopb.proto";
+
+message EngineConfig {
+  uint32 sensor_pin = 1;
+  uint32 rotation_sample_rate = 2;
+  uint32 time_sample_rate_ms = 3;
+  uint32 counts_per_rotation = 4;
+  repeated float time_filter_b_coeffs = 5 [ (nanopb).max_count = 5 ];
+  repeated float time_filter_a_coeffs = 6 [ (nanopb).max_count = 5 ];
+  repeated float rotation_filter_b_coeffs = 7 [ (nanopb).max_count = 5 ];
+  repeated float rotation_filter_a_coeffs = 8 [ (nanopb).max_count = 5 ];
+}
