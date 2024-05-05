@@ -36,4 +36,11 @@ message ControlFunctionState {
   bool velocity_mode = 25;
   float position_command = 26;
   float engine_rpm_derror = 27;
+  float throt_pot=28;
+  float throt_pot_filtered=29;
+  float brake_pot=30;
+  float brake_pot_filtered=31;
+  float p_term=32;
+  float d_term=33;
+
 }
