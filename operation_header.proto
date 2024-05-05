@@ -3,4 +3,7 @@ syntax = "proto3";
 message OperationHeader {
   uint32 timestamp = 1;
   uint32 clock_us = 2;
+  float controller_kp = 3;
+  float controller_kd = 4;
+  float target_rpm = 5;
 }
