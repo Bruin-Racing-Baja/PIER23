@@ -49,4 +49,9 @@ message ControlFunctionState {
   float d_throttle = 38;
   uint32 raw_throttle = 39;
   uint32 raw_brake = 40;
+
+  float left_front_wheel_rpm = 41;
+  float right_front_wheel_rpm = 42;
+  uint32 lw_gear_count = 43; 
+  uint32 rw_gear_count = 44; 
 }
